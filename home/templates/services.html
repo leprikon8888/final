@@ -1,0 +1,24 @@
+<section id="poslugi">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    {% for block in service_block  %}
+                        <h2 class="text-uppercase section-heading">{{ block.name }}</h2>
+                    <h3 class="text-muted section-subheading">{{ block.description }}</h3>
+                    {% endfor %}
+                </div>
+            </div>
+            <div class="row text-center">
+                {% for item in  services%}
+                    <div class="col-md-4">
+                        <span class="fa-stack fa-4x">
+                            <i class="fa fa-circle fa-stack-2x text-primary"></i>
+                            <i class="{{ item.icon }}"></i>
+                        </span>
+                    <h4 class="section-heading">{{ item.name }}</h4>
+                    <p class="text-muted">{{ item.description }}</p>
+                </div>
+                {% endfor %}
+            </div>
+        </div>
+</section>

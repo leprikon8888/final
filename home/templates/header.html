@@ -1,0 +1,30 @@
+{% load static %}
+
+
+    <nav class="navbar navbar-expand-lg fixed-top bg-dark navbar-dark" id="mainNav">
+        {% for item in brand_name %}
+                <div class="container"><a class="navbar-brand" href="#page-top">{{ item.name }}</a><button data-bs-toggle="collapse" data-bs-target="#navbarResponsive" class="navbar-toggler navbar-toggler-right" type="button" aria-controls="navbarResponsive" aria-expanded="false" aria-label="Toggle navigation"><i class="fa fa-bars"></i></button>
+        {% endfor %}
+
+            <div class="collapse navbar-collapse" id="navbarResponsive">
+                <ul class="navbar-nav ms-auto text-uppercase">
+                    {% for item in shapka %}
+                        <li class="nav-item"><a class="nav-link" href="#{{ item.slug }}">{{ item.name }}</a></li>
+                    {% endfor %}
+
+                </ul>
+            </div>
+        </div>
+    </nav>
+    {% for item in face %}
+         <header class="masthead" style="background-image:url('{{ item.photo.url }}');">
+        <div class="container">
+            <div class="intro-text">
+                <div class="intro-lead-in"><span>{{ item.h2 }}</span></div>
+                <div class="intro-heading text-uppercase"><span>{{ item.h1 }}</span></div><a class="btn btn-primary btn-xl text-uppercase" role="button" href="#poslugi">{{ item.button_name }}</a>
+            </div>
+        </div>
+    </header>
+    {% endfor %}
+
+
