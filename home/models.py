@@ -14,7 +14,7 @@ class ServiceBlock(models.Model):
 class Service(models.Model):
     service_block = models.ForeignKey(ServiceBlock, on_delete=models.CASCADE, related_name='services',
                                       verbose_name='Блок сервисов')
-    name = models.CharField(max_length=50, unique=True)
+    name = models.CharField(max_length=255, unique=True)
     slug = models.SlugField(max_length=50, unique=True, db_index=True, verbose_name='url')
     position = models.PositiveSmallIntegerField(unique=True)
     description = models.TextField(max_length=800, unique=True)
