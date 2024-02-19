@@ -121,3 +121,37 @@ class BrandFace(models.Model):
     button_name = models.CharField(max_length=60, unique=True)
     photo = models.ImageField(upload_to='face/', blank=True)
 
+
+class FormContact(models.Model):
+    name = models.CharField(max_length=160)
+    email = models.EmailField()
+    phone = models.CharField(max_length=160)
+    message = models.TextField(blank=True)
+
+    is_confirmed = models.BooleanField(default=False)
+    created_at = models.DateTimeField(auto_now_add=True)
+    updated_at = models.DateTimeField(auto_now=True)
+
+    class Meta:
+        ordering = ('-created_at',)
+
+
+class ContactBlock(models.Model):
+    name = models.CharField(max_length=100, verbose_name='Название блока ')
+    description = models.TextField(verbose_name='Описание блока ')
+    is_visible = models.BooleanField(default=True)
+    photo = models.ImageField(upload_to='bg_contacts/', blank=True)
+
+
+class Niz(models.Model):
+    name_brand = models.CharField(max_length=160)
+    terms_of_use = models.URLField(max_length=255, blank=True)
+    privacy_policy = models.URLField(max_length=255, blank=True)
+    instagram = models.URLField(max_length=255, blank=True)
+    facebook = models.URLField(max_length=255, blank=True)
+    linkedin = models.URLField(max_length=255, blank=True)
+
+    def __str__(self):
+        return f'{self.name_brand}'
+
+

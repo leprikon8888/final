@@ -14,14 +14,14 @@
                         <div class="portfolio-hover">
                             <div class="portfolio-hover-content"><i class="fa fa-plus fa-3x"></i></div>
                             {% if item.photo %}
-                                </div><img class="img-fluid" src="{{ item.photo.url }}">
+                                </div><img class="img-fluid" src="{{ item.photo.url }}" alt="img">
                             {% endif %}
                     </a>
-                    <div class="portfolio-caption">
+                        <div class="portfolio-caption">
                         <h4>{{ item.name }}</h4>
                         <p class="text-muted">{{ item.short_description }}</p>
                     </div>
-                </div>
+            </div>
                 {% endfor %}
 
 
