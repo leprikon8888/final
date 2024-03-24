@@ -1,0 +1,476 @@
+[
+{
+    "model": "home.serviceblock",
+    "pk": 1,
+    "fields": {
+        "name": "ПОСЛУГИ",
+        "description": "Перелік послуг, які ми надаємо своім бізнес клієнтам",
+        "is_visible": true
+    }
+},
+{
+    "model": "home.service",
+    "pk": 1,
+    "fields": {
+        "service_block": 1,
+        "name": "Інтегрований розвиток швейного бізнесу",
+        "slug": "povnij-suprovid",
+        "position": 1,
+        "description": "Навчання майстрів, розробка лекал, постачання матеріалів, створення сайту та виходження на міжнародний ринок разом з нами",
+        "icon": "fa fa-lock fa-stack-1x fa-inverse",
+        "is_visible": true
+    }
+},
+{
+    "model": "home.service",
+    "pk": 2,
+    "fields": {
+        "service_block": 1,
+        "name": "Ефективний запуск магазину: від онлайн до офлайн",
+        "slug": "dopomoga-u-vidkritti-onlajnofflajn-magazinu",
+        "position": 2,
+        "description": "Ми пропонуємо повний спектр послуг для успішного відкриття вашого магазину - як в онлайн, так і в офлайн сферах. Наша команда надасть консультації з реєстрації ФОП, оподаткування та розвитку бізнесу. Крім того, ми забезпечимо навчання для продавців та менеджерів, щоб забезпечити успіх вашого підприємства",
+        "icon": "fa fa-shopping-cart fa-stack-1x fa-inverse",
+        "is_visible": true
+    }
+},
+{
+    "model": "home.service",
+    "pk": 3,
+    "fields": {
+        "service_block": 1,
+        "name": "Комплексна підтримка продукту: від концепції до успіху",
+        "slug": "dopomga-v-stvorenni-i-prosuvanni-vashogo-produktu",
+        "position": 3,
+        "description": "Наша команда готова забезпечити повний цикл розвитку вашого продукту - від створення унікального дизайну та індивідуального логотипу до ефективного просування через контекстну рекламу та особистий контакт з клієнтами",
+        "icon": "fa fa-laptop fa-stack-1x fa-inverse",
+        "is_visible": true
+    }
+},
+{
+    "model": "home.portfolioblock",
+    "pk": 1,
+    "fields": {
+        "name": "Портфоліо",
+        "description": "Наші роботи",
+        "is_visible": true
+    }
+},
+{
+    "model": "home.portfolio",
+    "pk": 4,
+    "fields": {
+        "portfolio_block": 1,
+        "name": "Створення нового продукту",
+        "short_description": "Розробка колекції",
+        "slug": "stvorennya-novogo-produktu",
+        "position": 1,
+        "description": "Процес розробки та створення вашої лінійки нижньої білизни включає в себе комплексну роботу з дизайну, конструювання та виробництва. Ми працюємо над кожним аспектом продукту, починаючи від розробки моделей та вибору матеріалів, і завершуючи створенням лекал і виробництвом готових виробів з урахуванням найсучасніших технологій та тенденцій у галузі моди",
+        "is_visible": true,
+        "date": "2020",
+        "client": "Fadeeva Lingerie",
+        "category_service": "Створення нового продукту",
+        "photo": "portfolio/fullsize.png"
+    }
+},
+{
+    "model": "home.portfolio",
+    "pk": 5,
+    "fields": {
+        "portfolio_block": 1,
+        "name": "Зйомки",
+        "short_description": "Організація зйомок",
+        "slug": "zjomki",
+        "position": 2,
+        "description": "Надання послуг повного циклу для фотосесій, що включає у себе відбір талановитих моделей, підбір ідеальних локацій та забезпечення професійних фотографів з великим досвідом в галузі. Ми відповідаємо за всі етапи організації зйомок, забезпечуючи вам максимальний комфорт та високу якість результату",
+        "is_visible": true,
+        "date": "2021",
+        "client": "Fadeeva Lingerie",
+        "category_service": "Створення контенту",
+        "photo": "portfolio/фів.png"
+    }
+},
+{
+    "model": "home.portfolio",
+    "pk": 6,
+    "fields": {
+        "portfolio_block": 1,
+        "name": "Навчання персоналу",
+        "short_description": "навчання персоналу",
+        "slug": "personalu",
+        "position": 3,
+        "description": "Надання навчальних курсів з різних напрямків роботи, таких як швейний ремесло, навички менеджменту у сфері продажів, таргетинг та соціальні медіа маркетинг",
+        "is_visible": true,
+        "date": "2023",
+        "client": "ViVi",
+        "category_service": "Education",
+        "photo": "portfolio/asf.png"
+    }
+},
+{
+    "model": "home.portfolio",
+    "pk": 7,
+    "fields": {
+        "portfolio_block": 1,
+        "name": "Відкриття бізнесу",
+        "short_description": "Відкриття бізнесу",
+        "slug": "vidkrittya-biznesu",
+        "position": 4,
+        "description": "Комплексна підтримка та консультування під час офіційного запуску бізнесу, включаючи податковий супровід та ведення бухгалтерського обліку",
+        "is_visible": true,
+        "date": "2024",
+        "client": "ViVi",
+        "category_service": "Повний супровід",
+        "photo": "portfolio/fbdb.png"
+    }
+},
+{
+    "model": "home.portfolio",
+    "pk": 8,
+    "fields": {
+        "portfolio_block": 1,
+        "name": "СЕО",
+        "short_description": "Допомога у розвитку бізнесу",
+        "slug": "seo",
+        "position": 5,
+        "description": "Ми раді допомогти вам у розвитку вашого бізнесу, надаючи індивідуальні стратегії та рішення, адаптовані під ваші унікальні потреби. Наш досвід та експертиза допоможуть вам розширити вашу клієнтську базу, підвищити ефективність операцій та досягти нових висот у вашому бізнесі",
+        "is_visible": true,
+        "date": "2024",
+        "client": "безліч",
+        "category_service": "Просування",
+        "photo": "portfolio/ывапвыа.png"
+    }
+},
+{
+    "model": "home.portfolio",
+    "pk": 9,
+    "fields": {
+        "portfolio_block": 1,
+        "name": "Розробка упаковки бізнесу",
+        "short_description": "Розробка упаковки",
+        "slug": "rozrobka-upakovki-biznesu",
+        "position": 6,
+        "description": "Розробка брендбука, логотипів, упаковки та інших елементів корпоративного стилю для зміцнення іміджу бренду та створення впізнаваності",
+        "is_visible": true,
+        "date": "2023",
+        "client": "Kate_shop",
+        "category_service": "Дизайн",
+        "photo": "portfolio/фісфіс.png"
+    }
+},
+{
+    "model": "home.aboutblock",
+    "pk": 1,
+    "fields": {
+        "name": "Про нас",
+        "description": "Історія нашого зростання та досягнень",
+        "is_visible": true
+    }
+},
+{
+    "model": "home.aboutunit",
+    "pk": 1,
+    "fields": {
+        "about_block": 1,
+        "name": "Відкриття бізнесу",
+        "date": "Листопад 2019",
+        "slug": "vidkrittya-biznesu",
+        "position": 1,
+        "description": "Ми зробили перший крок у світ підприємництва, відкривши наш бізнес у листопаді. Палке бажання реалізувати ідеї та мрії в нас завжди було. Купівля першої машинки стала символом нового етапу і втіленням наших амбіцій. Відчуття власної незалежності та відповідальності надихало нас на дальший розвиток",
+        "is_visible": true,
+        "photo": "about/2988237076_w600_h600_2988237076.png"
+    }
+},
+{
+    "model": "home.aboutunit",
+    "pk": 2,
+    "fields": {
+        "about_block": 1,
+        "name": "Відкриття міні-цеху на дому",
+        "date": "Червень 2021",
+        "slug": "vidkrittya-mini-cehu-na-domu",
+        "position": 2,
+        "description": "Купівля нової квартири для відкриття невеликого цеху та найм першого робітника відображали наше прагнення до розвитку. Це були важливі кроки у створенні нашого бізнесу, що символізували нашу віру в успіх та готовність до росту",
+        "is_visible": true,
+        "photo": "about/undefined_image.png"
+    }
+},
+{
+    "model": "home.aboutunit",
+    "pk": 3,
+    "fields": {
+        "about_block": 1,
+        "name": "Відкриття постійного цеху",
+        "date": "Березень 2023",
+        "slug": "vidkrittya-postijnogo-cehu",
+        "position": 3,
+        "description": "Відкриття постійного цеху з виробництва білизни в промислових масштабах є ще одним важливим кроком у нашому розвитку. Це свідчить про нашу здатність до розширення та адаптації до зростаючих вимог ринку. Наша здатність виготовляти білизну великими обсягами відображає нашу впевненість у якості наших продуктів та довіру клієнтів до нашої компанії. Це також відкриває нові можливості для розширення асортименту та залучення нових клієнтів.",
+        "is_visible": true,
+        "photo": "about/йцвцйв_SjGWNin.png"
+    }
+},
+{
+    "model": "home.aboutunit",
+    "pk": 4,
+    "fields": {
+        "about_block": 1,
+        "name": "Відкриття першої оффлайн точки продажу",
+        "date": "червень 2023",
+        "slug": "vidkrittya-pershoyi-offlajn-tochki-prodazhu",
+        "position": 4,
+        "description": "Відкриття першого магазину у нашому місті стало важливою подією у розвитку нашого бізнесу. Це відображало нашу стратегію розширення та наближення до клієнтів. Відкриття оффлайн точки продажу дозволило нам побудувати ближчі стосунки з нашими клієнтами, надати їм можливість особистого вибору та отримати зворотний зв'язок щодо наших продуктів. Цей крок також підкреслив нашу віру в успіх нашого бізнесу та нашу готовність до подальшого росту",
+        "is_visible": true,
+        "photo": "about/undefined_image_1.png"
+    }
+},
+{
+    "model": "home.team",
+    "pk": 1,
+    "fields": {
+        "name": "Дар'я",
+        "job_title": "Засновник компанії, директор",
+        "position": 1,
+        "is_visible": true,
+        "instagram": "https://www.instagram.com/darikalubyanova/",
+        "facebook": "",
+        "linkedin": "",
+        "photo": "team/14_PX7XnI5.jpg"
+    }
+},
+{
+    "model": "home.team",
+    "pk": 2,
+    "fields": {
+        "name": "Катерина",
+        "job_title": "Менеджер",
+        "position": 3,
+        "is_visible": true,
+        "instagram": "https://www.instagram.com/katya.zeleninaa/",
+        "facebook": "https://www.facebook.com/profile.php?id=100071909577034",
+        "linkedin": "",
+        "photo": "team/13_zvHjDmF.jpg"
+    }
+},
+{
+    "model": "home.team",
+    "pk": 3,
+    "fields": {
+        "name": "Олександр",
+        "job_title": "Засновник компанії, директор",
+        "position": 2,
+        "is_visible": true,
+        "instagram": "https://www.instagram.com/alexandramelin88/",
+        "facebook": "https://www.facebook.com/aleksandr.kakusha",
+        "linkedin": "https://www.linkedin.com/in/olexandr-kakusha/",
+        "photo": "team/12_DHZPMXb.jpg"
+    }
+},
+{
+    "model": "home.client",
+    "pk": 1,
+    "fields": {
+        "name": "client 1",
+        "position": 1,
+        "is_visible": true,
+        "photo": "client/233_njI1JCj.png"
+    }
+},
+{
+    "model": "home.client",
+    "pk": 2,
+    "fields": {
+        "name": "client 2",
+        "position": 2,
+        "is_visible": true,
+        "photo": "client/12_DvOa9jO.png"
+    }
+},
+{
+    "model": "home.client",
+    "pk": 3,
+    "fields": {
+        "name": "client 3",
+        "position": 3,
+        "is_visible": true,
+        "photo": "client/4554_BfeyRO2.png"
+    }
+},
+{
+    "model": "home.client",
+    "pk": 4,
+    "fields": {
+        "name": "client 4",
+        "position": 4,
+        "is_visible": true,
+        "photo": "client/wef_G3QqaHE.png"
+    }
+},
+{
+    "model": "home.shapka",
+    "pk": 1,
+    "fields": {
+        "name": "Послуги",
+        "slug": "poslugi",
+        "position": 1,
+        "is_visible": true
+    }
+},
+{
+    "model": "home.shapka",
+    "pk": 2,
+    "fields": {
+        "name": "Портфоліо",
+        "slug": "portfolio",
+        "position": 2,
+        "is_visible": true
+    }
+},
+{
+    "model": "home.shapka",
+    "pk": 3,
+    "fields": {
+        "name": "ПРО НАС",
+        "slug": "pro-nas",
+        "position": 3,
+        "is_visible": true
+    }
+},
+{
+    "model": "home.shapka",
+    "pk": 4,
+    "fields": {
+        "name": "Команда",
+        "slug": "komanda",
+        "position": 4,
+        "is_visible": true
+    }
+},
+{
+    "model": "home.shapka",
+    "pk": 5,
+    "fields": {
+        "name": "Контакти",
+        "slug": "kontakti",
+        "position": 5,
+        "is_visible": true
+    }
+},
+{
+    "model": "home.brandname",
+    "pk": 1,
+    "fields": {
+        "name": "So_Sweet_Lingerie",
+        "is_visible": true
+    }
+},
+{
+    "model": "home.brandface",
+    "pk": 1,
+    "fields": {
+        "h1": "Ласкаво просимо",
+        "h2": "Раді бачити Вас",
+        "button_name": "Наші послуги",
+        "photo": "face/12.png"
+    }
+},
+{
+    "model": "home.formcontact",
+    "pk": 1,
+    "fields": {
+        "name": "sasha",
+        "email": "sasha@fsd.hg",
+        "phone": "4654",
+        "message": "sasha",
+        "is_confirmed": false,
+        "created_at": "2024-02-16T19:57:01.443Z",
+        "updated_at": "2024-02-16T19:57:01.443Z"
+    }
+},
+{
+    "model": "home.formcontact",
+    "pk": 2,
+    "fields": {
+        "name": "daha",
+        "email": "daha@sdf.dfg",
+        "phone": "4654",
+        "message": "fghfdg",
+        "is_confirmed": false,
+        "created_at": "2024-02-16T20:02:19.407Z",
+        "updated_at": "2024-02-16T20:02:19.407Z"
+    }
+},
+{
+    "model": "home.formcontact",
+    "pk": 3,
+    "fields": {
+        "name": "daha",
+        "email": "daha@sdf.dfg",
+        "phone": "4654",
+        "message": "fghfdg",
+        "is_confirmed": false,
+        "created_at": "2024-02-16T20:03:35.132Z",
+        "updated_at": "2024-02-16T20:03:35.132Z"
+    }
+},
+{
+    "model": "home.formcontact",
+    "pk": 4,
+    "fields": {
+        "name": "igor",
+        "email": "igor@gmail.com",
+        "phone": "5489",
+        "message": "qigordv",
+        "is_confirmed": false,
+        "created_at": "2024-02-16T20:03:54.449Z",
+        "updated_at": "2024-02-16T20:03:54.449Z"
+    }
+},
+{
+    "model": "home.formcontact",
+    "pk": 5,
+    "fields": {
+        "name": "Саша22",
+        "email": "leprikon8888@gmail.com",
+        "phone": "54896789",
+        "message": "privet",
+        "is_confirmed": false,
+        "created_at": "2024-02-19T14:45:59.639Z",
+        "updated_at": "2024-02-19T14:45:59.640Z"
+    }
+},
+{
+    "model": "home.formcontact",
+    "pk": 6,
+    "fields": {
+        "name": "кирило",
+        "email": "hgjfgf@df.ghf",
+        "phone": "+380975641212",
+        "message": "привет",
+        "is_confirmed": false,
+        "created_at": "2024-03-24T23:23:27.443Z",
+        "updated_at": "2024-03-24T23:23:27.443Z"
+    }
+},
+{
+    "model": "home.contactblock",
+    "pk": 1,
+    "fields": {
+        "name": "Зворотній зв'язок",
+        "description": "Залиште свої контакти і ми зв'яжемось з вами",
+        "is_visible": true,
+        "photo": "bg_contacts/DFAA57E4-BC71-44AF-9905-9CAF13F9AF44.jpeg"
+    }
+},
+{
+    "model": "home.niz",
+    "pk": 1,
+    "fields": {
+        "name_brand": "So Sweet Lingerie Brand 2024",
+        "terms_of_use": "https://policies.google.com/terms",
+        "privacy_policy": "https://policies.google.com/privacy",
+        "instagram": "https://www.instagram.com/so_sweet_lingerie/",
+        "facebook": "https://www.facebook.com/so.sweet.lingeri",
+        "linkedin": "https://www.linkedin.com/company/101160369/admin/feed/posts/"
+    }
+}
+]
