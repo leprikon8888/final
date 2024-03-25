@@ -7,6 +7,7 @@ class ServiceBlock(models.Model):
     is_visible = models.BooleanField(default=True)
 
     def __str__(self):
+        """ Return a string representation of the model. """
         return f'{self.name}'
 
 
@@ -22,6 +23,7 @@ class Service(models.Model):
     is_visible = models.BooleanField(default=True)
 
     def __str__(self):
+        """ Return a string representation of the model. """
         return f'{self.name}'
 
     class Meta:
@@ -35,6 +37,7 @@ class PortfolioBlock(models.Model):
     is_visible = models.BooleanField(default=True)
 
     def __str__(self):
+        """ Return a string representation of the model. """
         return f'{self.name}'
 
 
@@ -53,13 +56,13 @@ class Portfolio(models.Model):
     photo = models.ImageField(upload_to='portfolio', blank=True)
 
 
-
 class AboutBlock(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название блока ')
     description = models.TextField(verbose_name='Описание блока ')
     is_visible = models.BooleanField(default=True)
 
     def __str__(self):
+        """ Return a string representation of the model. """
         return f'{self.name}'
 
 
@@ -86,6 +89,7 @@ class Team(models.Model):
     photo = models.ImageField(upload_to='team/', blank=True)
 
     def __str__(self):
+        """ Return a string representation of the model. """
         return f'{self.name}'
 
     class Meta:
@@ -100,6 +104,7 @@ class Client(models.Model):
     photo = models.ImageField(upload_to='client/', blank=True)
 
     def __str__(self):
+        """ Return a string representation of the model. """
         return f'{self.name}'
 
 
@@ -135,6 +140,10 @@ class FormContact(models.Model):
     class Meta:
         ordering = ('-created_at',)
 
+    def __str__(self):
+        """ Return a string representation of the model. """
+        return f"{self.name} ({self.email})"
+
 
 class ContactBlock(models.Model):
     name = models.CharField(max_length=100, verbose_name='Название блока ')
@@ -152,6 +161,7 @@ class Niz(models.Model):
     linkedin = models.URLField(max_length=255, blank=True)
 
     def __str__(self):
+        """ Return a string representation of the model. """
         return f'{self.name_brand}'
 
 
